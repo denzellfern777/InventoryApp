@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="table_contents_view">Table Contents View</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="product_supplier_name">Supplier Name</string>
+    <string name="product_supplier_phone_number">Supplier Phone Number</string>
+    <string name="separator">" | "</string>
+    <string name="add_to_inventory">Add To Inventory</string>
+    <string name="product_name">Product Name</string>
+</resources>
