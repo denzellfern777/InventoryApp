@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <TextView
+        android:id="@+id/product_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_name_label"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/product_details_label_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/product_name_label"
+        app:layout_constraintStart_toEndOf="@id/product_quantity_label"
+        app:layout_constraintTop_toTopOf="@id/product_name_label"
+        tools:text="Any Name" />
+
+    <TextView
+        android:id="@+id/product_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_price_label"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/product_details_label_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_name_label" />
+
+    <TextView
+        android:id="@+id/product_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/product_price_label"
+        app:layout_constraintStart_toEndOf="@id/product_quantity_label"
+        app:layout_constraintTop_toTopOf="@id/product_price_label"
+        tools:text="1000" />
+
+    <TextView
+        android:id="@+id/product_quantity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_quantity_label"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/product_details_label_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_price_label" />
+
+    <TextView
+        android:id="@+id/product_quantity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/product_quantity_label"
+        app:layout_constraintStart_toEndOf="@id/product_quantity_label"
+        app:layout_constraintTop_toTopOf="@id/product_quantity_label"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/increase_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/increase_quantity_btn_label"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/product_quantity_tv"
+        app:layout_constraintStart_toEndOf="@id/product_quantity_tv"
+        app:layout_constraintTop_toTopOf="@id/product_quantity_tv" />
+
+    <Button
+        android:id="@+id/decrease_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/decrease_quantity_btn_label"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/increase_btn"
+        app:layout_constraintStart_toEndOf="@id/increase_btn"
+        app:layout_constraintTop_toTopOf="@id/increase_btn" />
+
+    <TextView
+        android:id="@+id/product_supplier_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_supplier_name_label"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/product_details_label_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_quantity_label" />
+
+    <TextView
+        android:id="@+id/product_supplier_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/product_supplier_name_label"
+        app:layout_constraintStart_toEndOf="@id/product_quantity_label"
+        app:layout_constraintTop_toTopOf="@id/product_supplier_name_label"
+        tools:text="Any Supplier Name" />
+
+    <TextView
+        android:id="@+id/product_supplier_phone_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/product_supplier_phone_number_label"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/product_details_label_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_supplier_name_label" />
+
+    <TextView
+        android:id="@+id/product_supplier_phone_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/product_supplier_phone_number_label"
+        app:layout_constraintStart_toEndOf="@id/product_quantity_label"
+        app:layout_constraintTop_toTopOf="@id/product_supplier_phone_number_label"
+        tools:text="0123456789" />
+
+    <ImageButton
+        android:id="@+id/call_supplier_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/call_button_content_description"
+        android:gravity="center"
+        android:src="@drawable/call_supplier"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/product_supplier_phone_number_tv"
+        app:layout_constraintStart_toEndOf="@id/product_supplier_phone_number_tv"
+        app:layout_constraintTop_toTopOf="@id/product_supplier_phone_number_tv" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit_current_product_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/edit_product_details"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

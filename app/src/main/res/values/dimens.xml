@@ -1,4 +1,6 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="marginTop">16dp</dimen>
+    <dimen name="product_details_label_text_size">16sp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
 </resources>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:padding="16dp">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/product_name_layout"
+        android:id="@+id/product_name_et_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
@@ -15,65 +15,65 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:inputType="text"
             android:id="@+id/product_name_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/product_name" />
+            android:hint="@string/product_name"
+            android:inputType="text" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/product_price_layout"
+        android:id="@+id/product_price_et_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_name_layout">
+        app:layout_constraintTop_toBottomOf="@+id/product_name_et_layout">
 
         <EditText
-            android:inputType="number"
             android:id="@+id/product_price_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/product_price" />
+            android:hint="@string/product_price"
+            android:inputType="number" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/product_quantity_layout"
+        android:id="@+id/product_quantity_et_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_price_layout">
+        app:layout_constraintTop_toBottomOf="@+id/product_price_et_layout">
 
         <EditText
-            android:inputType="number"
             android:id="@+id/product_quantity_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/product_quantity" />
+            android:hint="@string/product_quantity"
+            android:inputType="number" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/product_supplier_name_layout"
+        android:id="@+id/product_supplier_name_et_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_quantity_layout">
+        app:layout_constraintTop_toBottomOf="@+id/product_quantity_et_layout">
 
         <EditText
-            android:inputType="text"
             android:id="@+id/product_supplier_name_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/product_supplier_name" />
+            android:hint="@string/product_supplier_name"
+            android:inputType="text" />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -83,14 +83,14 @@
         android:layout_marginTop="@dimen/marginTop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/product_supplier_name_layout">
+        app:layout_constraintTop_toBottomOf="@+id/product_supplier_name_et_layout">
 
         <EditText
-            android:inputType="phone"
             android:id="@+id/product_supplier_phone_number_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/product_supplier_phone_number" />
+            android:hint="@string/product_supplier_phone_number"
+            android:inputType="phone" />
 
     </android.support.design.widget.TextInputLayout>
 
